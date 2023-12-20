@@ -34,9 +34,9 @@ class GenreMovies extends HTMLElement {
                 <div class="tag text-center" id="${genres.id}">${genres.name}</div>
             `;
 		});
-
 		this.innerHTML += htmlContent;
 	}
 }
 
 customElements.define("movie-genre", GenreMovies);
+

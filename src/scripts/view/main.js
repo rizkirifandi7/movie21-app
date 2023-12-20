@@ -58,15 +58,12 @@ const main = () => {
         `;
 	};
 
-	// initialization genre movie
 	const getGenreMovies = (id) => {
 		DataSource.getGenreMovies(id).then(renderResult).catch(fallbackResult);
 	};
 
-	// render all movies
 	getAllMovies("discover/movie");
 
-	// search movie
 	searchElement.clickEvent = onButtonSearchClicked;
 
 	const setGenreEvent = () => {
